@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Autarkes Hochbeet | Services</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="infos.html">Infos</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="infos.html">Infos</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Kontakt</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="service"> 
+        <div class="service-box">
+            <h1 class="heading">Services</h1>
+            <div class="service-wrapper">
+                <div class="service-item">
+                    <h2><i class="fa-solid fa-tint"></i> - Feuchtigkeit</h2>
+                    <p class="value" id="feuchtigkeit-value">--%</p>
+                    <div class="divider"></div>
+                    <h2>Grenzwert eingeben:</h2>
+                    <input type="text" id="feuchtigkeit-input" name="feuchtigkeit" placeholder="z.B. 70%">
+                    <button type="button" onclick="saveFeuchtigkeit()">Speichern</button>
+                </div>
+                <div class="service-item">
+                    <h2><i class="fa-solid fa-water"></i> - Wassertank</h2>
+                    <p class="value" id="wassertank-value">--L</p>
+                    <div class="divider"></div>
+                    <h2>Letzte Bewässerung:</h2>
+                    <p class="clock" id="last-watering">--:--</p>
+                    <h2>Letzte Lüftung:</h2>
+                    <p class="clock" id="last-ventilation">--:--</p>
+                </div>
+                <div class="service-item">
+                    <h2><i class="fa-solid fa-temperature-high"></i> - Temperatur</h2>
+                    <p class="value" id="temperatur-value">--°C</p>
+                    <div class="divider"></div>
+                    <h2>Grenzwert eingeben:</h2>
+                    <input type="text" id="temperatur-input" name="temperatur" placeholder="z.B. 20°C">
+                    <button type="button" onclick="saveTemperatur()">Speichern</button>
+                </div>
+            </div>
+            <div class="long-box">
+                <div class="box-header">
+                    <h2><i class="fa-solid fa-lightbulb"></i> - Beleuchtung</h2>
+                </div>
+                <div class="box-content">
+                    <h2>Von</h2>
+                    <input type="text" id="start-time" name="start-time" placeholder="z.B. 21:00">
+                    <h2>Bis</h2>
+                    <input type="text" id="end-time" name="end-time" placeholder="z.B. 04:00">
+                </div>
+                <div class="button-container">
+                    <button type="button" onclick="saveLightingTimes()">Speichern</button>
+                </div>
+                <div class="box-footer">
+                    <button id="toggle-light" class="toggle-btn" onclick="toggleLight()">Deaktiviert</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

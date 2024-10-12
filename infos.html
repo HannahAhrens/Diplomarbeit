@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Autarkes Hochbeet | Infos</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="infos.html">Infos</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="infos.html">Infos</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Kontakt</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="infos"> 
+        <h1 class="heading">Infos</h1>
+        <div class="infos-container">
+            <div class="infos-box">
+                <div class="infos-text">
+                    <h2><i class="fa-solid fa-microchip"></i> - Sensoren</h2>
+                    <p>Das gesamte Hochbeet hat Sensoren, die den Zustand der Pflanzen überwachen und die Daten auf dieser Webseite anzeigt.</p>
+                </div>
+            </div>
+            <div class="infos-box">
+                <div class="infos-text">
+                    <h2><i class="fa-solid fa-droplet"></i> - Bewässerung</h2>
+                    <p>Wenn die Bodenfeuchtigkeit unter den auf der Webseite eingestellten Wert fällt, schaltet sich eine Pumpe ein und bewässert die Pflanzen.</p>
+                </div>
+            </div>
+            <div class="infos-box">
+                <div class="infos-text">
+                    <h2><i class="fa-solid fa-sun"></i> - Beleuchtung</h2>
+                    <p>Die Pflanzen bekommen genug Sonnenlicht, bei Bedarf kann man zusätzliche LEDs einschalten und die Laufzeit auf der Webseite einstellen.</p>
+                </div>
+            </div>
+            <div class="infos-box">
+                <div class="infos-text">
+                    <h2><i class="fa-solid fa-fan"></i> - Belüftung</h2>
+                    <p>Sinkt die Temperatur unter den auf der Webseite eingestellten Wert, wird ein Ventilator eingeschaltet, der das Hochbeet belüftet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
